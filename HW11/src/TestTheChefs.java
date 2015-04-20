@@ -1,13 +1,17 @@
-import static net.sourceforge.jwebunit.junit.JWebUnit.*;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertFormNotPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertFormPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertImagePresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
+import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
+import static net.sourceforge.jwebunit.junit.JWebUnit.clickLinkWithExactText;
+import static net.sourceforge.jwebunit.junit.JWebUnit.clickLinkWithText;
+import static net.sourceforge.jwebunit.junit.JWebUnit.closeBrowser;
+import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.util.Map;
-
-import net.sourceforge.jwebunit.api.HttpHeader;
-
-import org.junit.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * @author Alecx Hunter
